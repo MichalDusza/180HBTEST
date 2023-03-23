@@ -1,0 +1,35 @@
+.line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #e9e9e9;
+
+    &--1 {
+      left: 0;
+    }
+
+    &--2 {
+      left: 25%;
+    }
+
+    &--3 {
+      left: 50%;
+    }
+
+    &--4 {
+      left: 75%;
+    }
+
+    &--5 {
+      left: 100%;
+    }
+
+    @media all and (max-width: 1024px) {
+      &.line--1,
+      &.line--5 {
+        display: none;
+      }
+    }
+  }

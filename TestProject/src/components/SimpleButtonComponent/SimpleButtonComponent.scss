@@ -1,0 +1,21 @@
+.simple-button {
+    --buttonColor: #FFFFFF;
+    --buttonBackgroundColorRgb: 235, 122, 52;
+
+    color: var(--buttonColor);
+    background-color: rgb(var(--buttonBackgroundColorRgb));
+    padding: 12px 24px;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all .2s;
+
+    &:hover {
+        background-color: rgba(var(--buttonBackgroundColorRgb), .85);
+    }
+}
